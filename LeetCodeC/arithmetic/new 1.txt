@@ -1,0 +1,35 @@
+2.2 使用自主开发的站内搜索程序。自主开发的站内搜索程序，大致
+可以分为完全自主开发和非完全自主开发的搜索程序。使用自主开发的站
+内搜索程序，在搜索的精确度和效果上优于通用搜索引擎。完全自主开发
+的搜索程序，可以基于java、jsp、asp技术等自主开发。非完全自主开发
+的搜索程序一般是在一些搜索引擎开源项目的基础上进行开发。目前搜索
+引擎相关的开源项目主要有：Lucene、Solr、Sphinx、Hibernate Search等
+
+
+
+对于一个网站来说，用搜索引擎来进行站内搜索往往比自己编写的站内搜索更高效，并且不占 用网站服务器的资源。下面是利用百度搜索引擎的站内搜索代码，使用时 只需要将代码里的“www.aku.edu.cn”替换成你的网址即可。 
+<!--Baidu站内搜索开始--> 
+<form action="http：//www.baidu.com/baidu"> 
+<input type=text name=word> 
+<input type="submit" value="Baidu 搜索"> 
+<input name=tn type=hidden value="bds"> 
+<input name=cl type=hidden value="3">
+<input name=ct type=hidden value="2097152">
+<input name=si type=hidden value="www.aku.edu.cn"> 
+</form>
+
+<!—搜搜（soso）站内搜索开始 - - >
+<form method="get" action="http://www.soso.
+com/q" target=_blank>
+<a href="http://www.soso.com" target="_
+blank">
+<img src="http://cache.soso.com//img/logo_v1.0.
+gif" border="0" align="absbottom">
+</a>
+<input type="text" name="w" size="30"
+maxlength="50">
+<input type="submit" value=" 站内搜索 ">
+<input type="hidden" name="site" value="jk.zzhxxy.com">//
+网站地址
+<input type="hidden" name="ch" value="website">
+</form>
